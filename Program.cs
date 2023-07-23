@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,28 +10,17 @@ namespace WordGuesser
     {
         static void Main(string[] args)
         {
-            //Random random = new Random();
-            //int wordLength = random.Next(4, 6);
-            //Console.WriteLine(wordLength);
+            
             int wordLength;
-            int /*randomInt ,*/ gameLife = 10;
-            char /*wordChar,*/ guessedWord;
+            int  gameLife = 10;
+            char guessedWord;
             string word = "", blankWord = "";
 
             word = RandomWord();
             wordLength = word.Length;
 
             char[] blankWordCharacter = new char[wordLength];
-
-            //for (int i = 0; i < wordLength; i++)
-            //{
-            //    randomInt = random.Next(65, 91);
-            //    wordChar = (char)randomInt;
-            //    word = word + wordChar;
-
-            //}
-            
-            
+  
             for (int i = 0; i < wordLength; i++)
             {
                 blankWord += "_";
@@ -166,25 +155,3 @@ namespace WordGuesser
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//need to optimize for pxgyy
